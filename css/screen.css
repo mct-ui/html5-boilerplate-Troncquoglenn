@@ -54,19 +54,19 @@ img {
     ---
     Default markup for typographic elements
 */
-
-h1 {
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 40px;
-  margin: 0 0 48 px;
-}
-
 h1,
 h2,
 h3 {
   /*color: #17181a;*/
   font-family: "Inter Web", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48 px;
 }
 
 h2 {
