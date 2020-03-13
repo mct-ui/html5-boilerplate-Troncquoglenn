@@ -64,7 +64,7 @@ h3 {
 }
 
 h1 {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
@@ -75,6 +75,10 @@ h2 {
   font-size: 23p;
   line-height: 32px;
   margin: 0 0 24px;
+}
+
+* + h2 {
+  margin-top: 48px;
 }
 
 h3 {
