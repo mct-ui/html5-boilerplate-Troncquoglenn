@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Web";
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+
 /*
     Elements: Page
     ---
@@ -5,14 +16,13 @@
 */
 
 html {
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-    color: #111;
-    padding: 24px 24px 0;
-    scroll-behavior: smooth;
-
-
+  font-size: 16px;
+  line-height: 1.5;
+  /*font-family: "Inter Web", "Helvetica Neue", helvetica, arial, sans-serif;*/
+  font-family: "droid-serif", Georgia, serif;
+  color: #5c6366;
+  padding: 48px 24px 24px;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -23,20 +33,20 @@ html {
  */
 
 ::-moz-selection {
-    background: #44C8F5;
-    color: white;
-    text-shadow: none;
+  background: #44c8f5;
+  color: white;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #44C8F5;
-    color: white;
-    text-shadow: none;
+  background: #00e6a1;
+  color: white;
+  text-shadow: none;
 }
 
 img {
-    max-width: 100%;
-    vertical-align: top;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 /*
@@ -46,31 +56,37 @@ img {
 */
 
 h1 {
-    font-family: "Times New Roman";
-    font-size: 36px;
-    font-weight: normal;
-    line-height: 40px;
-    margin: 0 0 48 px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 48 px;
+}
+
+h1,
+h2,
+h3 {
+  /*color: #17181a;*/
+  font-family: "Inter Web", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 h2 {
-    font-size: 23p;
-    line-height: 32px;
-    margin: 0 0 24px;
+  font-size: 23p;
+  line-height: 32px;
+  margin: 0 0 24px;
 }
 
 h3 {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 h4,
 h5,
 h6 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
 }
 
 p,
@@ -80,71 +96,71 @@ dl,
 table,
 address,
 figure {
-    margin: 0 0 24px;
+  margin: 0 0 24px;
 }
 
 ul,
 ol,
-blockquote {}
-
-li ul,
-li ol {}
-
 blockquote {
-    font-style: italic;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-    font-family: "Times New Roman", serif;
-}
-
-blockquote * {
-    /* als ze naast elkaar staan is het elk element in de blockquote */
-    font-size: inherit;
-    line-height: inherit;
-
-}
-
-ul,
-ol {
-    padding-left: 24px;
 }
 
 li ul,
 li ol {
-    margin-bottom: 0;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: "Times New Roman", serif;
+}
+
+blockquote * {
+  /* als ze naast elkaar staan is het elk element in de blockquote */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li ul,
+li ol {
+  margin-bottom: 0;
 }
 
 figcaption {
-    font-size: 12px;
-    line-height: 16px;
-    padding-top: 8px;
-    color: grey;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: grey;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: LightGrey;
-    margin: 0 0 24px;
+  border: 0;
+  height: 1px;
+  background: LightGrey;
+  margin: 0 0 24px;
 }
 
 a {
-    color: royalblue;
-    transition: all .1s ease-in-out;
+  color: royalblue;
+  transition: all 0.1s ease-in-out;
 }
 
 /*love comes before hate*/
 a:visited,
 a:active {
-    color: blueviolet;
+  color: #00e6a1;
 }
 
 a:hover,
 a:focus {
-    color: crimson;
+  color: #1abaff;
 }
-
 
 /*
     Media Queries
@@ -154,28 +170,29 @@ a:focus {
     Modify as content requires.
 */
 
-
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
 */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    html{
-        padding: 48px 48px 24px;
-    }
-    h1{
-        font-size: 58px;
-        line-height: 64px;;
-    }
-    
+  html {
+    padding: 48px 48px 24px;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
